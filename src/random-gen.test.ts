@@ -3,7 +3,7 @@ import {secretSanta} from "./index";
 describe("secret santa", () => {
   describe('error cases', () => {
     it("should throw if the list has not enough participants", () => {
-      const listOfPersons = [];
+      const listOfPersons: string[] = [];
 
       expect(() => secretSanta(listOfPersons)).toThrowError("Not enough participants");
     })
